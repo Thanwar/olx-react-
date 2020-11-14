@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.css';
+import searchbtn from '../images/search.png'
+
 
 export default class Search extends React.Component {
   render(){
@@ -33,7 +35,11 @@ export default class Search extends React.Component {
 
     return(<>
       <textarea className="searchbox" rows="2" cols="100" id="searchbar" placeholder="Find Cars, Mobile Phones and more..."></textarea>
-      <button onClick={searchads} className="searchbtn">Search </button>
+      {/* <button onClick={searchads} className="searchbtn">Search </button> */}
+      <a onClick={searchads} className="searchbtn" >
+        <img src = {searchbtn} width="40px"/>
+      </a>
+      
     </>)
   }
 }

@@ -7,6 +7,7 @@ import Sellbtn from './sellbtn'
 import Coverphoto from './coverphoto'
 import Categories from'./categories'
 import Footer from'./footer'
+import sellbtn from '../images/sellbtn.png';
 
 class LoggedHome extends React.Component {
   constructor(props) {
@@ -90,7 +91,7 @@ class LoggedHome extends React.Component {
               <Logo />
               <Searchbar />
               <a href="/postform">
-              <button className="sellbtn">Sell</button>
+              <img src={sellbtn} />
               </a>
               <div>
               <Categories />
